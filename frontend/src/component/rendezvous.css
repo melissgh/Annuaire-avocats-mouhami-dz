@@ -1,0 +1,104 @@
+.appointment-grid {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+.section-title-rdv {
+    color: rgb(222, 215, 206);
+    margin-top: 30px;
+    grid-column: span 2;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.table-container {
+    padding: 20px;
+    border-radius: 5px;
+    display: block;
+    background-color: rgb(222, 215, 206);
+    margin-bottom: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+}
+
+.form-container {
+    background-color: rgb(222, 215, 206);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.appointment-form {
+    margin-top: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.submit-button {
+    background-color: rgba(58, 38, 5, 0.959) ;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.confirmation-message {
+    margin-top: 20px;
+    color: green;
+}
+
+/* Responsive*/
+
+@media only screen and (max-width: 600px) {
+    .appointment-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .section-title-rdv {
+        grid-column: span 1;
+    }
+
+    .table-container,
+    .form-container {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+.appointment-grid{
+    margin: 0 auto;
+}
+.table-container {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+}

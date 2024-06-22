@@ -1,0 +1,28 @@
+.container-main {
+    font-family: Arial, sans-serif;
+}
+
+.register {
+    text-align: center;
+    margin: 3%;
+    color: rgba(58, 38, 5, 0.959);
+    font-size: larger;
+}
+
+.register h2 {
+    margin-top: 3%;
+}
+
+.google-login-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-login-container {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+}

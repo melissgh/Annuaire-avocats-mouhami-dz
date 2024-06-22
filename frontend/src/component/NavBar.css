@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+    * {
+        border: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'DM Serif Display', serif !important;
+
+        
+    }
+    
+     :root {
+        ---mainColor: #29335C;
+        ---mainColorLight: #495fb9;
+        ---secondaryColor: #eeeeee;
+        ---textColor: #eee;
+    }
+    
+ header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        padding: 0 2rem;
+        background-color: rgba(58, 38, 5, 0.959);
+        color: var(---textColor);
+        width: 100%;
+        
+    }
+    
+    nav a {
+        margin: 0 -1rem;
+        color: var(---textColor);
+        text-decoration: none;
+        font-size: 1.5rem;
+        width: 200px;
+        margin-left: -10%;
+    }
+    
+    header h3 a img {
+        width:30%;
+       margin-top:-5% !important;
+       margin-left: -55%;
+    }
+    
+    nav {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropbtn {
+        color: white;
+        background-color: rgba(58, 38, 5, 0.959);
+        padding: 10px 15px;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+    }
+    
+    .dropdown-content a {
+        color: rgba(58, 38, 5, 0.959);
+        padding: 10px 5px;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* Styles pour le bouton de fermeture (FaTimes) */
+    
+    .nav-close-btn {
+        display: none;
+        visibility: hidden;
+        /* Caché par défaut, visible lorsque le menu est ouvert */
+    }
+    /* Styles pour le bouton FaBars */
+    /* Styles pour le menu en mode responsive */
+    /* Styles pour les boutons visibles en mode responsive */
+    
+    nav a:hover {
+        color: rgb(147, 126, 20);
+        text-decoration: underline;
+    }
+    
+    header .nav-btn {
+        padding: 5px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(---textColor);
+        visibility: hidden;
+        opacity: 0;
+        font-size: 1.8rem;
+    }
+    
+    header .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    
+    @media only screen and (max-width:1024px) {
+        header .nav-btn {
+            visibility: visible;
+            opacity: 1;
+        }
+        header nav {
+            position: fixed;
+            top: -7%;
+            left: 0;
+            height: 110%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background-color: rgba(58, 38, 5, 0.959);
+            transition: 1s;
+            transform: translateY(-100vh);
+        }
+        header h3 a img {
+            width: 10%;
+            border-radius: 50%;
+            margin-right: 90%;
+        }
+        header .responsive_nav {
+            transform: none;
+        }
+        .dropdown .dropdown-content a {
+            width: 60%;
+            gap: 0.5rem;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    
+    .responsive_nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Styles pour les boutons visibles en mode responsive */
+    
+    .responsive_nav .nav-close-btn {
+        display: block;
+        /* Affiche le bouton de fermeture */
+    }
+    
+    .responsive_nav .nav-btn {
+        display: block;
+        /* Affiche le bouton FaBars */
+    }

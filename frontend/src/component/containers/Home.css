@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&family=PT+Serif&display=swap');
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+body {
+    background-color: rgba(113, 89, 50, 0.84);
+}
+
+main {
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+/* Responsive Styles */
+
+#home img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-shadow: #333;
+    box-sizing: border-box;
+    padding-top: 1%;
+    display: block;
+}
+
+.write {
+    left: 50%;
+    transform: translate(-100%, -10%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(58, 41, 13, 0.5);
+    /* semi-transparent background */
+    font-size: 35px;
+    font-weight: 900;
+    position: absolute;
+    top: 80%;
+}
+
+.write p span {
+    color: rgb(188, 127, 28);
+}
+
+
+/* Responsive Styles */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    /*padding: 20px;*/
+    /* margin-top: 20px;*/
+}
+
+.card-one,
+.card-two,
+.card-three {
+    max-width: 30%;
+    /* Adjust the maximum width as needed */
+    padding: 20px;
+    margin: 0 10px;
+    /* Add some space between cards */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    align-items: center;
+    display: inline-block;
+    box-shadow: 5px 5px 5px rgb(58, 37, 5);
+}
+
+.card-one:hover,
+.card-three:hover,
+.card-two:hover {
+    background-color: #745939;
+}
+
+.card-one svg,
+.card-two svg,
+.card-three svg {
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: rgb(58, 37, 5);
+}
+
+
+/* Title styles */
+
+.card-one h1,
+.card-two h1,
+.card-three h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: rgb(58, 37, 5)
+}
+
+
+/* Description styles */
+
+.card-one span,
+.card-two span,
+.card-three span {
+    color: rgb(58, 37, 5);
+    font-weight: bolder;
+}
+
+.card-one p,
+.card-two p,
+.card-three p {
+    font-size: 16px;
+    color: rgb(58, 37, 5);
+}
+
+.aboutus {
+    display: flex;
+    margin-top: 7%;
+    text-align: left;
+}
+
+.about h2 {
+    color: rgb(58, 37, 5);
+    font-size: 20px;
+}
+
+.about h3 {
+    color: #ffffff9b;
+    font-size: 35px;
+    padding-top: 3%;
+}
+
+.about h5 {
+    padding-top: 5%;
+    color: rgb(58, 37, 5);
+    font-size: 20px;
+}
+
+.about p {
+    padding-top: 10%;
+    color: rgb(58, 37, 5);
+    font-size: 20px;
+}
+
+.us .about {
+    display: inline-block;
+}
+
+.us img {
+    width: 90%;
+    height: 85%;
+}
+
+.line {
+    border: none;
+    border-top: 2px solid #ffffff9b;
+}
+
+#servicess {
+    margin-top: -8%;
+}
+
+#servicess h2 {
+    font-size: 35px;
+    color: #ffffff9b;
+    margin-bottom: 5%;
+}
+
+.last .contactus {
+    display: column;
+    align-items: flex-start;
+    /* Align items to the start by default */
+    text-align: center;
+}
+
+.contactus h2 {
+    color: rgb(58, 37, 5);
+    font-size: 18px;
+}
+
+.contactus h1 {
+    color: #ffffff9b;
+    font-size: 35px;
+    padding-top: 3%;
+}
+
+.contactus input,
+.contactus textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5%;
+    background-color: #ffffff9b;
+    font-size: 15px;
+}
+
+.contactus textarea {
+    padding: 10px;
+}
+
+.contactus,
+.map-carte {
+    display: inline-block;
+    text-align: center;
+}
+
+.contactus button {
+    margin-top: 3%;
+    background-color: #745939;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 1%;
+    border-radius: 30% 5%;
+}
+
+.contactus a {
+    text-decoration: none;
+    color: #ffffff9b;
+}
+
+.contactus {
+    margin-left: 1%;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 767px) {
+    .last {
+        align-items: center;
+        /* Align items to the center on smaller screens */
+        margin-top: 10%;
+        flex-direction: column;
+    }
+}
+
+
+/*Responsive*/
+
+@media screen and (min-width: 768px) {
+    /* Adjust styles for tablets */
+}
+
+@media screen and (min-width: 1024px) {
+    /* Adjust styles for desktops */
+}
+
+
+/* Small screens (mobile) */
+
+@media screen and (max-width: 767px) {
+    .cards {
+        flex-direction: column;
+        /* Stack cards vertically for smaller screens */
+        align-items: stretch;
+    }
+    .card-one,
+    .card-two,
+    .card-three {
+        max-width: 100%;
+        /* Take full width on smaller screens */
+        margin: 0 0 20px;
+        /* Add some space between stacked cards */
+    }
+    .aboutus {
+        flex-direction: column;
+        /* Stack about us content vertically for smaller screens */
+        margin-top: 10%;
+    }
+    .us,
+    .about {
+        width: 100%;
+    }
+    .us img {
+        width: 100%;
+    }
+    .team-members {
+        flex-direction: column;
+        /* Stack team members vertically for smaller screens */
+        align-items: stretch;
+        padding-top: 10%;
+    }
+    .team-member1,
+    .team-member2,
+    .team-member3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .team-member1 img,
+    .team-member2 img,
+    .team-member3 img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+        margin-bottom: 10px;
+    }
+    .contactus input,
+    .contactus textarea {
+        padding: 3% 5%;
+        /* Adjust input and textarea padding for smaller screens */
+    }
+    .contactus textarea {
+        padding: 3% 5.5%;
+        /* Adjust textarea padding for smaller screens */
+    }
+    .map-carte p iframe {
+        width: 100%;
+    }
+}
+
+
+/* Medium screens (tablets) */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Add specific styles for medium screens if needed */
+}
+
+
+/* Large screens (desktops) */
+
+@media screen and (min-width: 1024px) {
+    /* Add specific styles for large screens if needed */
+}
+
+
+/**/
